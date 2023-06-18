@@ -1,0 +1,50 @@
+﻿nav[aria-label="main nav"] {
+    width: 100%; /*רוחב 100 לתפיסת כל המקום הזמין*/
+    position: fixed; /*מיקום קבוע*/
+    background-color: black; /*רקע שחור*/
+    top: 0px; /*מיקום תפריט ניווט בקצה העליון*/
+    font-family: 'Heebo', sans-serif; /*פונט היבו ואם לא זמין סנס סריף ברירת מחדל*/
+    z-index: 1; /*סדר הערימה של אלמנטים*/
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*פריסה גמישה*/
+}
+
+nav li a {
+    display: inline-block; /*מוטבע על המאפיין*/
+    background-color: black; /*צבע הרקע של הכיתוב*/
+    color: white; /*צבע הכיתוב*/
+}
+
+a[href="#"] {
+    cursor: not-allowed; /*סמן-לא מותר*/
+}
+
+nav ul li a {
+    display: block; /*מעבר שורה לפני ואחרי*/
+    width: 140px;
+    padding: 20px;
+    text-decoration: none; /*ללא קישוט טקסט*/
+    text-align: center; /*מרכוז הטקסט בקוביה*/
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover .submenu {
+    display: inline-block;
+    width: 150px;
+    background-color: goldenrod;
+    top: 60px;
+}
+
+nav ul li a:hover {
+    background-color: goldenrod; /*רקע זהב בריחוף*/
+    text-decoration: underline; /*קישוט טקסט-קו תחתון*/
+}

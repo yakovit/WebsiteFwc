@@ -1,0 +1,100 @@
+﻿body {
+    direction: ltr;
+    margin: 0 auto;
+}
+
+h1, h2, h3, a, p, pre {
+    font-family: 'Heebo',sans-serif;
+}
+
+h1 { /*נתונים כותרת ראשית*/
+    font-size: 4em; /*גודל הכותרת הראשית*/
+    margin-left: 70px; /*מזיז את הכותרת הראשית*/
+    margin-bottom: 10px; /*מרחק הכותרת הראשית משאר הטקסט*/
+    line-height: 0; /*מרחק שורות*/
+    color: black; /*טקסט בצבע שחור*/
+}
+
+header { /*נתונים תמונת רקע*/
+    padding-top: 250px;
+    width: 100%;
+    height: 350px;
+    background-position: top;
+    background-size: 100%;
+    background-image: url('../pics/background.jpg');
+}
+
+.NavigationLine ol {
+    background-color: #304D1F;
+    margin: 0;
+    padding-top: 15px;
+}
+
+    .NavigationLine ol li {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+    }
+
+        .NavigationLine ol li:after {
+            content: " >";
+            color: #D3B824;
+        }
+
+        .NavigationLine ol li:last-child:after {
+            content: "";
+        }
+
+        .NavigationLine ol li a {
+            background-color: #304D1F;
+            color: white;
+        }
+
+main {
+    background-color: #304D1F;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+    main li {
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    main a {
+        color: white;
+    }
+
+h2 {
+    margin-left: 60px;
+    font-size: 2.5em;
+}
+
+#about_text {
+    font-size: 1.5em;
+    padding: 18px;
+    margin: 35px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.links {
+    font-size: 1.5em;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+    footer a {
+        color: white;
+        font-size: 1em;
+    }

@@ -1,0 +1,241 @@
+﻿body {
+    direction: ltr;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p, li, label {
+    font-family: 'Heebo',sans-serif;
+}
+
+h1 { /*נתונים כותרת ראשית*/
+    font-size: 4em; /*גודל הכותרת הראשית*/
+    margin-left: 70px; /*מזיז את הכותרת הראשית*/
+    margin-bottom: 10px; /*מרחק הכותרת הראשית משאר הטקסט*/
+    line-height: 0; /*מרחק שורות*/
+    color: black; /*טקסט בצבע שחור*/
+}
+
+header { /*נתונים תמונת רקע*/
+    padding-top: 250px;
+    width: 100%;
+    height: 350px;
+    background-position: top;
+    background-size: 100%;
+    background-image: url('../pics/background.jpg');
+}
+
+.NavigationLine ol {
+    background-color: #304D1F;
+    margin: 0;
+    padding-top: 45px;
+}
+
+    .NavigationLine ol li {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+    }
+
+        .NavigationLine ol li:after {
+            content: " >";
+            color: #D3B824;
+        }
+
+        .NavigationLine ol li:last-child:after {
+            content: "";
+        }
+
+        .NavigationLine ol li a {
+            background-color: #304D1F;
+            color: white;
+        }
+
+main li {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+main ol li {
+    color: white;
+}
+
+main a {
+    color: white;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+#sec1 {
+    background-color: #304D1F; /*ירוק*/
+    padding: 0%;
+}
+
+#IsraelTeam {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+}
+
+.info {
+    text-align: left;
+    padding: 50px;
+}
+
+#IsraelTeam div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 50px;
+}
+
+.IsraelImg {
+    width: 220px;
+    height: 220px;
+}
+
+#quantity { /*עיצוב תיבת טקסט הזמנה*/
+    margin: 0;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+    #quantity:focus {
+        box-shadow: inset 0px 0px 5px 0px rgba(214, 180, 35);
+    }
+
+#order {
+    display: block;
+    width: 60px;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #808080;
+}
+
+#altspace { /*כיתוב שם קבוצה*/
+    position: absolute;
+    width: max-content;
+    top: 250px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-left: 12px;
+}
+
+#gallery_container {
+    position: relative;
+    margin: 0 auto;
+    width: 550px;
+}
+
+    #gallery_container img {
+        max-width: 100%;
+    }
+
+#initial {
+    display: block;
+}
+
+.slidephoto {
+    display: none;
+    margin: 5px; /*רווח בין תמונות קטנות לתמונה גדולה*/
+}
+
+    .slidephoto span {
+        display: inline-block;
+        position: absolute;
+        font-family: 'Heebo', sans-serif;
+        left: 20px;
+        top: 10px;
+        color: white;
+        background-color: black;
+        padding: 0 5px;
+    }
+
+/*    .slidephoto img {
+        width: 100%;
+        height: auto;
+    }*/
+
+.control {
+    position: absolute;
+    top: 44%;
+    transition: 0.3s;
+}
+
+    .control:hover {
+        opacity: 0.7;
+        background-color: antiquewhite;
+        border-radius: 5px;
+    }
+
+#thumbnails {
+    display: flex;
+    width: 550px;
+    margin: 0 auto;
+    position: relative;
+    left: 4px; /*הזזת מקבץ תמונות קטנות*/
+}
+
+.thumbnail_container {
+    margin: 0;
+}
+
+.thumbnail {
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+    .thumbnail:hover {
+        border-radius: 25px;
+        opacity: 1;
+    }
+
+#thumbnails img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 7px; /*רווח בין תמונות קטנות*/
+}
+
+.left {
+    left: 0;
+    margin-left: 12px;
+}
+
+.right {
+    right: 0;
+    margin-right: 12px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.links {
+    font-size: 1.5em;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+    footer a {
+        color: white;
+        font-size: 1em;
+        size
+    }

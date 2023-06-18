@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us - FWC</title>
+    <meta name="description" content="contact form" />
+    <meta name="keywords" content="contact us FWC" />
+    <link rel="icon" type="image/x-icon" href="pics/icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/NavigationMenu.css" rel="stylesheet" />
+    <link href="styles/Contact.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav aria-label="main nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a>National Teams</a>
+                        <ul class="submenu">
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">Argentina</a></li>
+                            <li><a href="Israel.html">Israel</a></li>
+                            <li><a href="#">Portugal</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a>Steps</a>
+                        <ul class="submenu">
+                            <li><a href="TheWay.html">The way to victory</a></li>
+                            <li><a href="#">World champions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>FIFA World Cup</h1>
+        </header>
+
+        <main>
+            <nav aria-label="navigation" class="NavigationLine">
+                <ol>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ol>
+            </nav><br />
+            <form>
+                <h2 id="contact">Contact Form</h2> <!--כותרת-->
+                <label for="firstName">
+                    <!--תיבת שם-->
+                    First Name:<br>
+                    <input type="text" id="firstName" name="firstname" placeholder="first name" class="one_line_inp" aria-required="true" required /><br>
+                </label><br>
+
+                <label for="lastName">
+                    <!--תיבת שם משפחה-->
+                    Last Name:<br>
+                    <input type="text" id="lastName" name="lastname" placeholder="last name" class="one_line_inp" aria-required="true" required /><br>
+                </label><br>
+
+                <label for="email">
+                    <!--תיבת מייל-->
+                    E-mail:<br>
+                    <input type="text" id="email" name="email" placeholder="email" class="one_line_inp" aria-required="true" required /><br>
+                </label><br>
+
+                <label for="selectoption">
+                    <!--תיבת בחירה-->
+                    Select the reason for contacting us:<br />
+                    <select id="selectoption" required class="one_line_inp" aria-required="true" name="reason">
+                        <option value="1">Order tickets for the game</option>
+                        <option value="2">Customer Service</option>
+                        <option value="3">Purchase accessories</option>
+                    </select>
+
+                </label> <!--תיבת הסכמה-->
+                <br />
+                <label for="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" aria-required="true" required />
+                    I agree to the terms of use
+                </label><br><br />
+
+                <label for="send">
+                    <!--שליחה-->
+                    <input type="submit" id="send" name="send" value="Submit" /><br>
+                </label>
+            </form>
+
+        </main>
+
+
+
+        <footer>
+            <div>
+                <h3>Contact Us</h3>
+                <p>
+                    <span class="material-symbols-outlined">
+                        phone_iphone
+                    </span>
+                    Telephone: +43542340000
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">
+                        alternate_email
+                    </span> Email: Football@FWC.com
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                    </span> Address: George The King Blvd 024545
+                </p>
+                <p>Or online through our <a href="Contact.html">Online Contact Form</a></p>
+            </div>
+            <div>
+                <p>
+                    FIFA World Cup is a project website <br />
+                    made by shaked ohana & Yaakov Ithaki
+                </p>
+                <span class="links">
+                    <a href="About.html">About Us</a><br /><br />
+                    <a href="SiteMap.html">Site Map</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
